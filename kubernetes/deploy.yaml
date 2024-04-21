@@ -104,7 +104,7 @@ metadata:
       subresource: status
       time: '2024-04-21T10:58:28Z'
   name: cac-simple-webapp
-  namespace: green
+  namespace: blue
 spec:
   replicas: 3
   selector:
@@ -221,7 +221,7 @@ metadata:
       subresource: status
       time: '2024-04-21T10:59:10Z'
   name: cac-simple-webapp-hpa-f5xr
-  namespace: green
+  namespace: blue
 spec:
   maxReplicas: 5
   metrics:
@@ -283,7 +283,7 @@ metadata:
       operation: Update
       time: '2024-04-21T10:36:49Z'
   name: cac-simple-webapp-service
-  namespace: green
+  namespace: blue
 spec:
   clusterIP: 34.118.227.175
   clusterIPs:
@@ -355,7 +355,7 @@ metadata:
       subresource: status
       time: '2024-04-21T10:44:45Z'
   name: cac-simple-webapp-zwcwt
-  namespace: green
+  namespace: blue
 spec:
   allocateLoadBalancerNodePorts: true
   clusterIP: 34.118.234.148
