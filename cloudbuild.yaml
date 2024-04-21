@@ -18,10 +18,14 @@ steps:
       - '--platform'
       - 'managed'
       - '--region'
-      - 'us-central1'      # Use a dynamically-set region for flexibility
-      - '--allow-unauthenticated'  # Optional: If your app doesn't require authentication
+      - '${_GKE_LOCATION}'
+      - '--allow-unauthenticated'
       - '--port'
-      - '80'  # Specify the port to expose
+      - '80'
+      - '--namespace'
+      - '${_KS_NAMESPACE}'
+      - '--cluster'
+      - '${_GKE_CLUSTER}' 
 
 images:
   - 'gcr.io/$PROJECT_ID/cac-simple-webapp:$COMMIT_SHA'
